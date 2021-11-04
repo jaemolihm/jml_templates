@@ -1,13 +1,16 @@
 #!/bin/bash
 set -e
 
-find -name "*.wfc?*" -delete
+PREFIX=NbP
+N_Q=13
+
+find -name "$PREFIX.wfc?*" -delete
 find -size 0 -delete
 
 cp -r temp.1/_ph0 temp/
 rm -r temp.1
 
-for iq in `seq 2 13`; do
-  cp -r temp.$iq/_ph0/NbP.q_$iq temp/_ph0/
+for iq in `seq 2 $N_Q`; do
+  cp -r temp.$iq/_ph0/"$PREFIX".q_$iq temp/_ph0/
   rm -r temp.$iq
 done

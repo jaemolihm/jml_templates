@@ -10,8 +10,8 @@
   nq2 = 4
   nq3 = 4
   tr2_ph   =  1.0d-22
+  nmix_ph = 12
 
-  recover = .true.
   start_q = INDQ
   last_q = INDQ
  /
