@@ -1,0 +1,18 @@
+--
+&inputph
+  prefix   = 'NbP'
+  reduce_io = .true.
+  outdir   = 'temp.INDQ/'
+  fildyn   = 'dyn_dir/NbP.dyn.xml'
+  ldisp    = .true.
+  fildvscf = 'dvscf'
+  nq1 = 4
+  nq2 = 4
+  nq3 = 4
+  tr2_ph   =  1.0d-22
+
+  recover = .true.
+  start_q = INDQ
+  last_q = INDQ
+ /
+
